@@ -5,18 +5,19 @@ const EmployeeRow = props => {
   const [lastName, setLastName] = useState('Last Name')
   const [jobTitle, setJobTitle] = useState('Job Title')
   const [fullTime, setFullTime] = useState('Part-Time')
-  console.log(props)
+  const [id, setId] = useState(0)
 
   useEffect(() => {
     setFirstName(props.data.firstName)
     setLastName(props.data.lastName)
     setJobTitle(props.data.jobTitle)
     setFullTime(props.data.isFullTime ? 'Full-Time' : 'Part-Time')
+    setId(props.data.id)
   }, [props])
 
   return (
     <>
-      <a href="#" className="collection-item avatar">
+      <a href={`/employee/${id}`} className="collection-item avatar">
         <img
           src={`https://api.adorable.io/avatars/285/${props.data.id}`}
           alt=""

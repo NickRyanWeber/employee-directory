@@ -20,12 +20,20 @@ const EmployeeDirectory = () => {
 
   return (
     <section className="container">
-      <h1>EmployeeDirectory</h1>
+      <h3>Employee Directory</h3>
       <ul className="collection">
         {employees.map((employee, i) => {
           return <EmployeeRow key={i} data={employee} />
         })}
       </ul>
+      <div className="fixed-action-btn">
+        <a
+          href="/new-employee"
+          className="btn-floating btn-large red z-depth-2"
+        >
+          <i className="large material-icons">add</i>
+        </a>
+      </div>
     </section>
   )
 }
