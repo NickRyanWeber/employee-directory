@@ -5,12 +5,14 @@ import HomePage from './Pages/HomePage'
 import EmployeeDirectory from './Pages/EmployeeDirectory'
 import NewEmployee from './Pages/NewEmployee'
 import EmployeePage from './Pages/EmployeePage'
+import Header from './components/Header'
 
 class App extends Component {
   render() {
     return (
       <>
         <main>
+          <Header />
           <Router>
             <Switch>
               <Route exact path="/" component={HomePage}></Route>
