@@ -17,10 +17,12 @@ const NewEmployee = () => {
 
   const addNewEmployee = async e => {
     e.preventDefault()
+    console.log(form)
     const resp = await axios.post(
       `https://sdg-staff-directory-app.herokuapp.com/api/rabblehouse/Employees`,
-      { form }
+      form
     )
+    console.log(resp.data)
   }
 
   const updateField = e => {
