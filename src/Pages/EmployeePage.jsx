@@ -25,7 +25,7 @@ const EmployeePage = props => {
 
   return (
     <section className="container">
-      <h1>
+      <h1 className="teal-text text-darken-1">
         {employee.firstName} {employee.lastName}
       </h1>
       <p>Title - {employee.jobTitle}</p>

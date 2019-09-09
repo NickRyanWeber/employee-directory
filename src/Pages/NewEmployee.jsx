@@ -34,7 +34,7 @@ const NewEmployee = () => {
 
   return (
     <section className="container">
-      <h3>New Employee</h3>
+      <h3 className="teal-text text-darken-1">New Employee</h3>
       <form action="" className="col s12" onSubmit={addNewEmployee}>
         <div className="row">
           <div className="input-field col s6">
@@ -45,7 +45,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName" className="teal-text text-dark-4">
+              First Name
+            </label>
           </div>
           <div className="input-field col s6">
             <input
@@ -55,7 +57,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="lastName" className="teal-text text-dark-4">
+              Last Name
+            </label>
           </div>
         </div>
         <div className="row">
@@ -67,7 +71,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="teal-text text-dark-4">
+              Email
+            </label>
           </div>
           <div className="input-field col s6">
             <input
@@ -77,7 +83,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="phone">Phone Number</label>
+            <label htmlFor="phone" className="teal-text text-dark-4">
+              Phone Number
+            </label>
           </div>
         </div>
         <div className="row">
@@ -89,7 +97,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="jobTitle">Job Title</label>
+            <label htmlFor="jobTitle" className="teal-text text-dark-4">
+              Job Title
+            </label>
           </div>
           <div className="input-field col s6">
             <input
@@ -99,7 +109,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="jobDescription">Job Description</label>
+            <label htmlFor="jobDescription" className="teal-text text-dark-4">
+              Job Description
+            </label>
           </div>
         </div>
         <div className="row">
@@ -111,7 +123,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="address">Address</label>
+            <label htmlFor="address" className="teal-text text-dark-4">
+              Address
+            </label>
           </div>
         </div>
         <div className="row">
@@ -123,7 +137,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="city">City</label>
+            <label htmlFor="city" className="teal-text text-dark-4">
+              City
+            </label>
           </div>
           <div className="input-field col s4">
             <input
@@ -133,7 +149,9 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="state">State</label>
+            <label htmlFor="state" className="teal-text text-dark-4">
+              State
+            </label>
           </div>
           <div className="input-field col s4">
             <input
@@ -143,11 +161,13 @@ const NewEmployee = () => {
               className="validate"
               onChange={updateField}
             />
-            <label htmlFor="zip">Zip</label>
+            <label htmlFor="zip" className="teal-text text-dark-4">
+              Zip
+            </label>
           </div>
         </div>
         <button
-          className="btn waves-effect waves-light"
+          className="btn waves-effect waves-light teal darken-2"
           type="submit"
           name="action"
         >

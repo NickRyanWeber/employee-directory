@@ -20,7 +20,7 @@ const EmployeeDirectory = () => {
 
   return (
     <section className="container">
-      <h3>Employee Directory</h3>
+      <h3 className="teal-text text-darken-1">Employee Directory</h3>
       <ul className="collection">
         {employees.map((employee, i) => {
           return <EmployeeRow key={i} data={employee} />
